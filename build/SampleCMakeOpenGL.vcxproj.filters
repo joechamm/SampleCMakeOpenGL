@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\workspace\SampleCMakeOpenGL\src\main.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\SampleCMakeOpenGL\src\rendering\LoadShaders.cpp">
+      <Filter>Sources\rendering</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\workspace\SampleCMakeOpenGL\src\rendering\LoadShaders.h">
+      <Filter>Sources\rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\rendering\CheckError.h">
+      <Filter>Sources\rendering</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\workspace\SampleCMakeOpenGL\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Sources">
+      <UniqueIdentifier>{6204D021-2F45-39BF-8458-EF4A0806C9E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\rendering">
+      <UniqueIdentifier>{3C166CBA-EE96-3A00-BB94-7F1EE5BEDB93}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

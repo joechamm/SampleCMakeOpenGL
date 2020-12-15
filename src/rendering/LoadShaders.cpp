@@ -7,7 +7,7 @@
 #include <cstdlib>
 #include <iostream>
 
-#include <GL3/gl3w.h>
+//#include <GL3/gl3w.h>
 #include "LoadShaders.h"
 
 #ifdef __cplusplus
