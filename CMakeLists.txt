@@ -32,28 +32,15 @@ find_package(OpenGL REQUIRED)
 
 # GLFW 
 find_package(glfw3 CONFIG REQUIRED)
-message(STATUS "Found GLFW3 in ${GLFW3_INCLUDE_DIR}")
 
 # GLM
 find_package(GLM REQUIRED)
-message(STATUS "GLM included at ${GLM_INCLUDE_DIR}")
 
-# Assimp
-find_package(ASSIMP REQUIRED)
-message(STATUS "Found ASSIMP in ${ASSIMP_INCLUDE_DIR}")
-
-# GLAD
-find_package(GLAD REQUIRED)
-message(STATUS "Found GLAD in ${GLAD_INCLUDE_DIR}")
-
-# STB_IMAGE
-add_library(STB_IMAGE "thirdparty/stb_image.cpp")
-
-# GLAD
-#add_library(GLAD "thirdparty/glad.c")
+# GL3W
+find_package(gl3w CONFIG REQUIRED)
 
 # Put all libraries into a variable
-set(LIBS glfw3 opengl32 assimp STB_IMAGE GLAD)
+set(LIBS opengl32 glfw glm unofficial::gl3w::gl3w)
 
 # Define the include DIRs
 include_directories(
